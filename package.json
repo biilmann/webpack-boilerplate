@@ -4,7 +4,7 @@
   "description": "A boilerplate",
   "main": "webpack.config.js",
   "scripts": {
-    "serve": "./node_modules/.bin/webpack-dev-server --inline --config webpack.config.js",
+    "start": "./node_modules/.bin/webpack-dev-server --inline --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -16,7 +16,7 @@ Clone this repository, then run:
 
 ```bash
 npm install
-npm run serve
+npm start
 ```
 
 Then visit [localhost:8080](http://localhost:8080/)
