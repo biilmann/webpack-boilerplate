@@ -1,6 +1,8 @@
-# Webpack Boilerplan
+# Webpack Boilerplate
 
 This is an app boilerplate based on webpack.
+
+So far just an experiment.
 
 Goals:
 
