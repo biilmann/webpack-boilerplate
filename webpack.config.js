@@ -1,5 +1,6 @@
 module.exports = {
   module: {
+
     preLoaders: [
          {
            loader: "eslint-loader",
@@ -23,12 +24,14 @@ module.exports = {
   eslint: {configFile: '.eslintrc'},
 
   context: __dirname + "/app",
-  entry: "./test",
+  entry: "./app",
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: "public/"
-  }
+    contentBase: "public/",
+    historyApiFallback: true,
+    devTool: 'source-map'
+  },
 };
