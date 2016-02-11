@@ -1,12 +1,8 @@
-var fs = require("fs");
-
-var hints = JSON.parse(fs.readFileSync(".jshintrc"));
-
 module.exports = {
   module: {
     preLoaders: [
          {
-           loader: "jshint-loader",
+           loader: "eslint-loader",
            test: /\.js$/,
            exclude: /node_modules|bower_components/,
          }
@@ -24,7 +20,7 @@ module.exports = {
     ]
   },
 
-  jshint: hints,
+  eslint: {configFile: '.eslintrc'},
 
   context: __dirname + "/app",
   entry: "./test",
